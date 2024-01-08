@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Animated Resume Builder</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Resume Builder</h1>
+        </div>
+        <div class="form-container">
+            <form id="resumeForm">
+                <!-- Personal Information Section -->
+                <div class="form-section">
+                    <label for="fullName" style="color: white;">Full Name:</label>
+                    <div class="input-container">
+                        <input type="text" style="background: none;" id="fullName" name="fullName" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label for="email" style="color: white;">Email:</label>
+                    <div class="input-container">
+                        <input type="text" style="background: none;" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <!-- Education Section  -->
+                <div class="form-section">
+                    <label for="10thEducation" style="color: white;">10th Education:</label>
+                    <div class="input-container">
+                        <input type="text" style="background: none;" id="10thEducation" name="10thEducation" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label for="12thEducation" style="color: white;">12th Education:</label>
+                    <div class="input-container">
+                        <input type="text" style="background: none;" id="12thEducation" name="12thEducation">
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label for="graduation" style="color: white;">Graduation:</label>
+                    <div class="input-container">
+                        <input type="text" style="background: none;" id="graduation" name="graduation">
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label for="postGraduation" style="color: white;">Post Graduation:</label>
+                    <div class="input-container">
+                        <input type="text" style="background: none;" id="postGraduation" name="postGraduation">
+                    </div>
+                </div> 
+
+                 <!-- Work Experience Section  -->
+                 <div class="form-section">
+                    <label for="workExperience" style="color:white;">Work Experience:</label>
+                    <div class="input-container">
+                        <textarea id="workExperience" name="workExperience" rows="4" style="background: none;"></textarea>
+                    </div>
+                </div> 
+
+                <!-- Projects Section -->
+                <div class="form-section">
+                    <label for="projects" style="color:white;">Projects:</label>
+                    <div class="input-container">
+                        <textarea id="projects" name="projects" rows="4" style="background: none;"></textarea>
+                    </div>
+                </div>
+
+                <!-- Skill Sets Section -->
+                <div class="form-section">
+                    <label for="skillSets" style="color:white;">Skill Sets:</label>
+                    <div class="input-container">
+                        <textarea id="skillSets" name="skillSets" rows="4" style="background: none;"></textarea>
+                    </div>
+                </div> 
+
+                <!-- Hobbies Section -->
+                 <div class="form-section">
+                    <label for="hobbies" style="color:white;">Hobbies:</label>
+                    <div class="input-container">
+                        <input type="text" style="background: none;" id="hobbies" name="hobbies">
+                    </div>
+                </div> 
+
+                <!-- Strengths Section -->
+                 <div class="form-section">
+                    <label for="strengths" style="color:white;">Strengths:</label>
+                    <div class="input-container">
+                        <textarea id="strengths" name="strengths" rows="4" style="background: none;"></textarea>
+                    </div>
+                </div> 
+
+                <!-- LinkedIn and GitHub Section -->
+            <div class="form-section">
+                    <label for="linkedin" style="color:white;">LinkedIn Profile:</label>
+                    <div class="input-container">
+                        <input type="url" id="linkedin" name="linkedin" placeholder="https://www.linkedin.com/in/yourprofile" pattern="https://.*" size="30" style="background: none;">
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label for="github" style="color:white;">GitHub Profile:</label>
+                    <div class="input-container">
+                        <input type="url" id="github" name="github" placeholder="https://github.com/yourusername" pattern="https://.*" size="30" style="background: none;">
+                    </div>
+                </div>
+ 
+                <button type="button" onclick="generateResume()" style="background: none;">Generate Resume</button>
+            </form>
+        </div>
+        <div class="resume-container" id="resumeContainer"> 
+            <!-- Generated resume will be displayed here -->
+         </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>  
+ 
+
+
+ 

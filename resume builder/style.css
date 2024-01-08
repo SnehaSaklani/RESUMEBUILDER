@@ -1,0 +1,101 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('/bckimg2.jpg');
+    background-size: cover;
+    margin: 0;
+    color: #333;
+}
+
+/* Container Styles */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: larger;
+}
+
+/* Form Container Styles */
+.form-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Form Section Styles */
+.form-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap; /* Added flex-wrap for responsiveness */
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: larger;
+    color: #333;
+    width: 100%; /* Full width on small screens */
+}
+
+.input-container {
+    width: 100%;
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 2px solid #e87809d9;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    font-weight: bold;
+    width: calc(100% - 20px);     /* Adjusted width for small screens */
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #e87809d9;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #e87809d9;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Full width on small screens */
+}
+
+button:hover {
+    background-color: #bc5a07;
+}
+
+.resume-container {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(231, 122, 14, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 1s;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .form-section {
+        width: 100%; /* Full width on small screens */
+    }
+}
